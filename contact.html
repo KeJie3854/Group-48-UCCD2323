@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Culinary Delights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Culinary Delights</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bookmark.html">Bookmarks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-hero bg-primary text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4">Get in Touch</h1>
+                <p class="lead">We'd love to hear from you!If you have any enquiry or any feedback feel free to contact us by filling up the form below.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        
+        <section class="contact-form py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form onsubmit="showAlert()">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="E.g.Jack" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="E.g.jack@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNum">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNum" placeholder="E.g.012-3456789" pattern="[0]{1}[1-9]{2}-[0-9]{7,8}">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Enter your message here" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            <button type="reset" class="btn btn-clear btn-lg">Clear</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p><strong>Address:</strong>Jalan Universiti, Bandar Barat 31900, Kampar, Perak</p>
+                            <p><strong>Phone:</strong> 605 468 8888</p>
+                            <p><strong>Email:</strong> contact@culinarydelights.com</p>
+                            <div class="social-media">
+                                <a href="https://facebook.com" class="btn btn-outline-light mr-2 social-icon" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com" class="btn btn-outline-light mr-2 social-icon" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com" class="btn btn-outline-light mr-2 social-icon" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com" class="btn btn-outline-light social-icon" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Culinary Delights. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" class="text-white mx-2" target="_blank" title="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-white mx-2" target="_blank" title="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-white mx-2" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" class="text-white mx-2" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

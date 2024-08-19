@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Culinary Delights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .profile-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .profile-header {
+            margin-bottom: 20px;
+        }
+        .profile-pic-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #007BFF;
+        }
+        .profile-pic-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-item {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .profile-item label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .profile-item input, .profile-item textarea, .profile-item select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .profile-item textarea {
+            resize: none;
+            height: 100px;
+        }
+        .edit-button, .save-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .save-button {
+            background-color: #28a745;
+        }
+        .save-button.hidden {
+            display: none;
+        }
+        .edit-button.hidden {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Culinary Delights</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bookmark.html">Bookmarks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center"><b>Profile</b></h1>
+    <div class="profile-container">
+        
+        <div class="profile-header">
+            
+            <div class="profile-pic-container">
+                <img src="images/user.jpg" alt="Profile Picture" id="profilePic">
+            </div>
+            <h2 id="userName"><b>User Name</b></h2>
+            <div class="user-id">User ID: <span id="userID">123456789</span></div>
+        </div>
+        <div class="profile-item">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="User Name" disabled>
+        </div>
+        <div class="profile-item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="username@gmail.com" disabled>
+        </div>
+        <div class="profile-item">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" value="012-3456789" disabled>
+        </div>
+        <div class="profile-item">
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" value="2024-08-31" disabled>
+        </div>
+        <div class="profile-item">
+            <label for="gender">Gender:</label>
+            <select id="gender" disabled>
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="profile-item">
+            <label for="bio">Bio:</label>
+            <textarea id="bio" disabled>Hi, I’m User Name. This is my bio.</textarea>
+        </div>
+        <button class="edit-button" id="editButton" onclick="enableEdit()">Edit Profile</button>
+        <button class="save-button hidden" id="saveButton" onclick="saveProfile()">Save Profile</button>
+    </div>
+
+    <script>
+        function enableEdit() {
+            document.getElementById('name').disabled = false;
+            document.getElementById('email').disabled = false;
+            document.getElementById('phone').disabled = false;
+            document.getElementById('birthdate').disabled = false;
+            document.getElementById('gender').disabled = false;
+            document.getElementById('bio').disabled = false;
+            document.getElementById('editButton').classList.add('hidden');
+            document.getElementById('saveButton').classList.remove('hidden');
+        }
+
+        function saveProfile() {
+            document.getElementById('name').disabled = true;
+            document.getElementById('email').disabled = true;
+            document.getElementById('phone').disabled = true;
+            document.getElementById('birthdate').disabled = true;
+            document.getElementById('gender').disabled = true;
+            document.getElementById('bio').disabled = true;
+            document.getElementById('userName').innerText = document.getElementById('name').value;
+            document.getElementById('editButton').classList.remove('hidden');
+            document.getElementById('saveButton').classList.add('hidden');
+            alert('Profile saved successfully!');
+        }
+    </script><br><br><br><br>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Culinary Delights. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" class="text-white mx-2" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-white mx-2" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-white mx-2" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" class="text-white mx-2" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

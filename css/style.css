@@ -1,0 +1,709 @@
+/* General Styles */
+body {
+    font-family: "Times New Roman",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(skyblue, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #343a40;
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 1030;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
+}
+
+.navbar-collapse {
+    max-height: 80vh; 
+    overflow-y: auto;
+}
+
+/* Header Styles */
+header {
+    background: url('images/header.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Main Content */
+.container {
+    margin-top: 20px;
+}
+
+.container1 {
+    margin-top: 20px;
+    font-family: "consolas", sans-serif;
+}
+
+.welcome {
+    margin-top: 20px;
+    font-family: "Matemasie", sans-serif;
+}
+
+
+/* Cards */
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Recipe Detail Page */
+.recipe-video {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.recipe-ingredients,
+.recipe-steps {
+    margin-bottom: 20px;
+}
+
+.recipe-ingredients ul,
+.recipe-steps ol {
+    padding-left: 20px;
+}
+
+.recipe-ingredients ul li,
+.recipe-steps ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-clear{
+    background-color: #e10000;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-clear:hover{
+    background-color: #bb0000;
+}
+
+/* Blog Page */
+.blog-post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 20px;
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-post-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.blog-list {
+    font-size: 1.2rem;
+}
+
+.blog-hr{
+    border: 1px solid black;
+}
+
+.blog-body-hr{
+    border:1px solid grey;
+}
+
+.blog-para{
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Additional Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+    .navbar-brand,
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .recipe-video {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate__animated.animate__fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 60px 0;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.5rem;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #343a40;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Login Page Styles */
+.login-hero {
+    font-family: 'Open Sans', sans-serif;
+    background: url('images/login-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.login-hero h1 {
+    font-family: "Matemasie", sans-serif;
+    font-size: 3rem;
+    /* Change to desired color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Add subtle shadow */
+    margin-bottom: 30px;
+}
+
+.login-hero p {
+    font-family: "consolas", sans-serif;
+    font-size: 1.25rem;
+    /* Change to desired color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Add subtle shadow */
+    margin-bottom: 30px;
+}
+
+.login-form {
+    padding: 60px 0;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: auto;
+}
+
+.login-box h1 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.login-box .form-control {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.login-box .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-box .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.login-box .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.login-box .btn-outline-danger,
+.login-box .btn-outline-primary {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.login-box .btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.login-box .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.login-box p {
+    font-size: 1rem;
+}
+
+.login-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer .social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #007bff;
+}
+
+/* Hero Section Styles */
+.signup-hero {
+    background: url('images/signup-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.signup-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.signup-hero p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Signup Form Styles */
+.signup-form {
+    padding: 60px 0;
+}
+
+.signup-form h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.signup-form .form-control {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.signup-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.signup-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.social-signup {
+    margin-top: 20px;
+}
+
+.social-signup p {
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #343a40;
+}
+
+.social-signup .btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.social-signup .btn-google {
+    background-color: #db4437;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.social-signup .btn-facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+/*Profile*/
+.profile-form{
+    padding: 60px 0;
+}
+
+.profile-box{
+    max-width: 400px;
+    margin: auto;
+}
+
+/*Cookies*/
+#consentBox {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+
+#consentBox.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+::selection {
+    color: #fff;
+    background: skyblue;
+}
+
+#consentContent p {
+    color: #858585;
+    margin: 10px 0 20px 0;
+}
+
+#consentContent .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.consentButton,
+.rejectButton {
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.consentButton {
+    background: #007bff;
+    margin-right: 10px;
+}
+
+.rejectButton {
+    color: #111211;
+    background: transparent;
+    border: 2px solid #007bff;
+    text-decoration: none;
+}
+
+#consentHeader {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.card .btn-primary, .bookmark-btn {
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem; /* Reduce the font size slightly */
+  padding: 4px 8px;  /* Reduce padding to make the buttons smaller */
+  display: inline-block;
+  text-align: center; /* Center the text inside the button */
+}
+
+.bookmark-btn {
+  flex: 0 0 auto; /* Prevent the bookmark button from expanding */
+}
+
+.bookmark-btn:hover {
+  background-color: lightblue;
+}
+
+#bookmarks-container .post {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+#bookmarked-recipes p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#clearBookmarks {
+    margin-bottom: 20px; /* Adds space between the button and the recipe containers */
+}
+

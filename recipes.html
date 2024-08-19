@@ -1,0 +1,143 @@
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Home | Culinary Delights</title>
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="js/scripts.js" defer></script>
+                <body>
+                    <header>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="index.html">Culinary Delights</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="bookmark.html">Bookmarks</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </header>
+                    <!--The share button image is taken from: https://in.pinterest.com/pin/sharing-icon-clipart-transparent-background-share-text-and-icon-share-icon-social-media-png-image-for-free-download--986147649641497549/-->
+                    <main class="container">
+                        <h1>Our Recipes</h1>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/canai.jpg" class="card-img-top" alt="Roti Canai">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Roti Canai</h5>
+                                        <p class="card-text">Indian flatbread dish with curry.</p>
+                                        <div class ="button-container">
+                                            <a href="recipe-details1.html" class="btn btn-primary">View Recipe</a>
+                                            <button class="bookmark-btn" data-recipe-id="Roti-Canai" data-recipe-name="Roti Canai" data-recipe-img="images/canai.jpg" data-recipe-url="recipe-details1.html">Bookmark</button>
+                                        </div><br>
+                                          <button class="share-btn" data-recipe-id="1">
+                                              <img src="images/share-btn.png" style= "width: 70px; height:40px;" alt="Share">
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/kuey.jpg" class="card-img-top" alt="char kuey teow">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Char Kuey Teow</h5>
+                                        <p class="card-text">Stir-fried rice noodle dish.</p>
+                                        <div class ="button-container">
+                                        <a href="recipe-details2.html" class="btn btn-primary">View Recipe</a><button class="bookmark-btn" data-recipe-id="Char-Kuey-Teow" data-recipe-name="Char Kuey Teow" data-recipe-img="images/kuey.jpg" data-recipe-url="recipe-details2.html">Bookmark</button></div><br>
+                                        <button class="share-btn" data-recipe-id="2">
+                                          <img src="images/share-btn.png" style= "width: 70px; height:40px;" alt="Share">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/durian.png" class="card-img-top" alt="Durian Cake">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Durian Cheese Cake</h5>
+                                        <p class="card-text">Cheese cake with Durian flavor.</p>
+                                        <div class ="button-container">
+                                        <a href="recipe-details3.html" class="btn btn-primary">View Recipe</a><button class="bookmark-btn" data-recipe-id="Durian-Cheese-Cake" data-recipe-name="Durian Cheese Cake" data-recipe-img="images/durian.png" data-recipe-url="recipe-details3.html">Bookmark</button></div><br>
+                                        <button class="share-btn" data-recipe-id="3">
+                                          <img src="images/share-btn.png" style= "width: 70px; height:40px;" alt="Share">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4"> 
+                                <div class="card">
+                                    <img src="images/blue.jpeg" class="card-img-top" alt="Nasi Lemak Blue Pea">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Butterfly Blue Pea Nasi Lemak</h5>
+                                        <p class="card-text">Traditional Blue Pea Nasi Lemak.</p>
+                                        <div class ="button-container">
+                                        <a href="recipe-details4.html" class="btn btn-primary">View Recipe</a><button class="bookmark-btn" data-recipe-id="Butterfly-Blue-Pea-Nasi-Lemak" data-recipe-name="Butterfly Blue Pea Nasi Lemak" data-recipe-img="images/blue.jpeg" data-recipe-url="recipe-details4.html">Bookmark</button></div><br>
+                                        <button class="share-btn" data-recipe-id="4">
+                                          <img src="images/share-btn.png" style= "width: 70px; height:40px;" alt="Share">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4"> 
+                                <div class="card">
+                                    <img src="images/rendang.jpg" class="card-img-top" alt="Nasi Lemak Rendang">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rendang Chicken Nasi Lemak</h5>
+                                        <p class="card-text">Traditional Rendang Chicken Nasi Lemak.</p>
+                                        <div class ="button-container">
+                                        <a href="recipe-details5.html" class="btn btn-primary">View Recipe</a><button class="bookmark-btn" data-recipe-id="Lemak" data-recipe-name="Rendang Chicken Nasi Lemak" data-recipe-img="images/rendang.jpg" data-recipe-url="recipe-details5.html">Bookmark</button></div><br>
+                                        <button class="share-btn" data-recipe-id="5">
+                                          <img src="images/share-btn.png" style= "width: 70px; height:40px;" alt="Share">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4"> 
+                                <div class="card">
+                                    <img src="images/apam.jpg" class="card-img-top" alt="Apam Balik">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Apam Balik</h5>
+                                        <p class="card-text">Fluffy Peanut Pancake.</p>
+                                        <div class ="button-container">
+                                        <a href="recipe-details6.html" class="btn btn-primary">View Recipe</a><button class="bookmark-btn" data-recipe-id="Apam Balik" data-recipe-name="Apam Balik" data-recipe-img="images/apam.jpg" data-recipe-url="recipe-details6.html">Bookmark</button>
+                                        </div><br>
+                                        <button class="share-btn" data-recipe-id="6">
+                                          <img src="images/share-btn.png" style= "width: 70px; height:40px;" alt="Share">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat similar blocks for other recipes -->
+                        </div>
+                    </main>
+                    <footer class="bg-dark text-white py-4">
+                        <div class="container text-center">
+                            <p>&copy; 2024 Culinary Delights. All rights reserved.</p>
+                            <div class="social-media">
+                                <a href="https://facebook.com" class="text-white mx-2" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com" class="text-white mx-2" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com" class="text-white mx-2" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com" class="text-white mx-2" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </footer>
+                </body>
+                </html>

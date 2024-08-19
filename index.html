@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home | Culinary Delights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    
+    <div id="consentBox">
+        <div id="consentContent">
+            <p>
+              This site uses cookies to enhance your experience. 
+              Please choose 'Accept' or 'Reject' to indicate your preference.
+            </p>
+            <div class="buttons">
+                <button class="consentButton">
+                      Accept Cookies
+                  </button>
+                <button class="rejectButton">
+                      Reject
+                  </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Culinary Delights</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bookmark.html">Bookmarks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero bg-primary text-white text-center py-5">
+            <div class="container1">
+                <div class="welcome">
+                    <h1 class="display-4">Welcome to Culinary Delights!</h1>
+                </div>    
+            <p class="lead">Explore our delicious recipes and culinary tips.</p>
+            <a href="recipes.html" class="btn btn-light btn-lg">View Recipes</a>
+            <a href="blog.html" class="btn btn-light btn-lg">View Blog</a>
+            </div>
+        </section>
+
+        <!-- Featured Recipes -->
+        <section class="featured-recipes py-5">
+            <div class="container">
+                <h2 class="text-center mb-4"><b>Featured Recipes</b></h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/canai.jpg" class="card-img-top" alt="Roti Canai">
+                            <div class="card-body">
+                                <h5 class="card-title"><big>Roti Canai</big></h5>
+                                <p class="card-text">Indian flatbread dish with curry.</p>
+                                <a href="recipe-details1.html" class="btn btn-primary">View Recipe</a>
+                                <button class="bookmark-btn" data-recipe-id="Roti-Canai" data-recipe-name="Roti Canai" data-recipe-img="images/canai.jpg" data-recipe-url="recipe-details1.html">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/kuey.jpg" class="card-img-top" alt="Char Kuey Teow">
+                            <div class="card-body">
+                                <h5 class="card-title"><big>Char Kuey Teow</big></h5>
+                                <p class="card-text">Stir-fried rice noodle dish.</p>
+                                <a href="recipe-details2.html" class="btn btn-primary">View Recipe</a>
+                                <button class="bookmark-btn" data-recipe-id="Char-Kuey-Teow" data-recipe-name="Char Kuey Teow" data-recipe-img="images/kuey.jpg" data-recipe-url="recipe-details2.html">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/durian.png" class="card-img-top" alt="Durian Cheese Cake">
+                            <div class="card-body">
+                                <h5 class="card-title"><big>Durian Cheese Cake</big></h5>
+                                <p class="card-text">Cheese cake with Durian flavor.</p>
+                                <a href="recipe-details3.html" class="btn btn-primary">View Recipe</a>
+                                <button class="bookmark-btn" data-recipe-id="Durian-Cheese-Cake" data-recipe-name="Durian Cheese Cake" data-recipe-img="images/durian.png" data-recipe-url="recipe-details3.html">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more featured recipes as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="about-us py-5" style="background-color: #bdf6ff;">
+            <div class="container"><br>
+                <h1 class="text-center mb-4"><b>About Us</b></h1>
+                <p class="text-center" style="font-size: 140%" >At Culinary Delights, we are passionate about bringing you the best recipes and
+                    culinary tips. <br>Our mission is to inspire home cooks and food enthusiasts alike to explore the art of
+                    cooking.</p>
+                <div class="text-center">
+                    <a href="about_us.html" class="btn btn-primary">Learn More About Us</a>
+                </div><br>
+            </div>
+        </section>
+
+        <!-- Blog Highlights -->
+        <section class="blog-highlights py-5">
+            <div class="container">
+                <h2 class="text-center mb-4"><b>From Our Blog</b></h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/nasiKandar.jpg" class="card-img-top" alt="Blog Post 1">
+                            <div class="card-body">
+                                <h5 class="card-title"><big>5 Best Nasi Kandar in Penang</big></h5>
+                                <p class="card-text">Here are the list of best spot for Nasi Kandar lover!</p>
+                                <a href="blog_nasiKandar.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/malaysiaFood.jpg" class="card-img-top" alt="Blog Post 2">
+                            <div class="card-body">
+                                <h5 class="card-title"><big>Top 5 MUST TRY Malaysia Dishes</big></h5>
+                                <p class="card-text">Here are the list of well-known Malaysia food that you have to give it a try!
+                                </p>
+                                <a href="blog_malaysiaFood.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/michelinRestaurant.jpg" class="card-img-top" alt="Blog Post 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><big>5 MICHELIN Restaurant in Malaysia that offer Vegetarian Menus</big></h5>
+                                <p class="card-text">Several MICHELIN restaurant in KL and Penang that are now serving standard and vegetarian tasting menus.
+                                </p>
+                                <a href="blog_michelinRestaurant.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more blog highlights as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section class="signup bg-primary text-white py-5">
+            <div class="container text-center">
+                <h1 class="mb-4"><b><big>Join Us!</big></b></h1>
+                <p class="mb-4">Receive a notification immediately when there are new updates about recipes and cooking tips.</p>
+                <a href="login.html" class="btn btn-light btn-lg">Login</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Culinary Delights. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" class="text-white mx-2" target="_blank" title="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-white mx-2" target="_blank" title="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-white mx-2" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" class="text-white mx-2" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
